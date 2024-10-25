@@ -10,13 +10,15 @@
 <body>
     <h1>hey this is a home page from django</h1>
     {% for chai in chais %}
-    <div class="chai-item">
-       <img src="{{chai.image.url}}" alt="">
+    <div class="chai-item" >
+       <img src="{{chai.image.url}}" alt="" style="width: {{ 300 }}px; height:{{ 300 }}px;">
        
     </div>
     <h3>{{chai.name}}</h3>
 
     <a href="{% url 'details' chai.id  %}"> <button class="btn">{{chai.type}} - {{chai.id}}</button></a>
+    <h2>{{chaia.rating}}</h2>
     {% endfor %}
+  
 </body>
 </html>
