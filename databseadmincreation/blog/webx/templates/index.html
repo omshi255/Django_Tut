@@ -1,11 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{%  static 'style.css' %}">
 </head>
 <body>
     <h1>hey this is a home page from django</h1>
+    {% for chai in chais %}
+    <div class="chai-item">
+       <img src="{{chai.image.url}}" alt="">
+       
+    </div>
+    <h3>{{chai.name}}</h3>
+
+    <a href="{% url 'details' chai.id  %}"> <button class="btn">{{chai.type}} - {{chai.id}}</button></a>
+    {% endfor %}
 </body>
 </html>

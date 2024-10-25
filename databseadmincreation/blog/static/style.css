@@ -1,0 +1,31 @@
+body
+{
+    background-color: #333;
+    color: #fff;
+}
+.chai-item
+{
+   height: 400px;
+   width: 500px;
+   /* border: 2px solid white; */
+   display: block;
+   margin: auto;
+   background-color: rgb(6, 6, 41);
+  
+}
+div img
+{
+   height: 300px;
+   width: 400px;
+   border-radius: 5px;
+   margin-left: 50px;
+}
+h3
+{
+    margin-left: 690px;
+}
+.btn
+{
+    
+    margin-left: 690px;  
+}
